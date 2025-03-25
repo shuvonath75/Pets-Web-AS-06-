@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="images/logo.webp">
+    <title>Peddy</title>
+</head>
+<body>
+    <!-- header section -->
+     <header>
+       <!-- Navbar Section -->
+        <nav class="container mx-auto px-4">
+            <div class="navbar bg-base-100  ">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="flex items-center">
+                    <img class="logo w-[25px]" src="images/logo.webp" alt="Peddy Logo">
+                    <a class="btn btn-ghost font-bold text-xl">Peddy</a>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn rounded-full"><img class="w-4" src="images/icons8-customer-32.png" alt="Customer Icon"></a>
+                </div>
+              </div>
+        </nav>
+     </header>
+
+     <!-- Main section -->
+      <main>
+        <!-- Banner and pets image section -->
+        <div class="card bg-base-100 mx-auto  mb-12">
+            <div class="card-body items-center text-center gap-10">
+                <h2 class="text-gray-400 text-xl font-bold">Bringing Families Together ❤️‍🔥 </h2>
+              <h2 class="text-6xl font-extrabold">Your Path to Adoption <br> Starts Here</h2>
+              <p class="text-gray-800">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+              <div class="card-actions">
+                <button class="btn text-white rounded-md text-xl bg-[#0E7A81]">View More</button>
+              </div>
+            </div>
+
+            <figure class="px-10 pt-10">
+                <img src="images/pet.webp" alt="Pets" class="rounded-xl" />
+            </figure>
+          </div>
+
+          <!-- Adopt Section -->
+          <div class="card bg-base-100 mx-auto mb-16">
+            <div class="card-body items-center text-center gap-7">
+              <h2 class="text-3xl font-semibold">Adopt  Your  Best Friend</h2>
+              <p class="text-gray-800">It is a long established fact that a reader will be distracted by the readable content of a <br> page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            </div>
+
+            <!-- Pets button section -->
+
+            <div class="card w-11/12 bg-base-100 mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-4 mb-14">
+
+              <!-- Dogs BTN -->
+              <button class="btn h-20 rounded-full">
+                <img class="w-[55px]" src="images/dog.png" alt="dog">
+                <span class="font-bold text-xl">Dogs</span>
+              </button>
+
+              <!-- Cats BTN -->
+              <button class="btn h-20 rounded-full">
+                <img class="w-[55px]" src="images/cat.png" alt="dog">
+                <span class="font-bold text-xl">Cats</span>
+              </button>
+
+              <!-- Rabbits BTN -->
+              <button class="btn h-20 rounded-full">
+                <img class="w-[55px]" src="images/rabbit.png" alt="dog">
+                <span class="font-bold text-xl">Rabbits</span>
+              </button>
+
+              <!-- Birds BTN -->
+              <button class="btn h-20 rounded-full">
+                <img class="w-[55px]" src="images/parrot.png" alt="dog">
+                <span class="font-bold text-xl">Birds</span>
+              </button>
+
+            </div>
+
+
+            <!-- Best for deals -->
+
+            <div class="flex justify-between w-11/12 mx-auto bg-base-100 mt-6">
+
+              <a class=" text-xl font-bold">Best Deal For you</a>
+              <div class="card-actions">
+                <button class="btn text-white rounded-md bg-[#0E7A81]">Sort by Price</button>
+              </div>
+            </div>
+           
+          </div>
+      </main>
+
+      <!-- footer section -->
+       <footer></footer>
+    
+</body>
+</html>
