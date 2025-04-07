@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="images/logo.webp">
     <title>Peddy</title>
 </head>
@@ -47,7 +48,7 @@
      </header>
 
      <!-- Main section -->
-      <main>
+      <main class="container mx-auto px-4 pt-4">
         <!-- Banner and pets image section -->
         <div class="card bg-base-100 mx-auto  mb-12">
             <div class="card-body items-center text-center gap-10">
@@ -66,35 +67,35 @@
 
           <!-- Adopt Section -->
           <div class="card bg-base-100 mx-auto mb-16">
-            <div class="card-body items-center text-center gap-7">
+            <div class="card-body items-center text-center gap-7 mb-4">
               <h2 class="text-3xl font-semibold">Adopt  Your  Best Friend</h2>
               <p class="text-gray-800">It is a long established fact that a reader will be distracted by the readable content of a <br> page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
             </div>
 
             <!-- Pets button section -->
 
-            <div class="card w-11/12 bg-base-100 mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-4 mb-14">
+            <div id="Categories_btn" class="card w-11/12 bg-base-100 mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-4 mb-14">
 
               <!-- Dogs BTN -->
-              <button class="btn h-20 rounded-full">
+              <button id="Dog_btn" onclick="loadCategoryPets('Dog')" class="btn h-20 rounded-full">
                 <img class="w-[55px]" src="images/dog.png" alt="dog">
                 <span class="font-bold text-xl">Dogs</span>
               </button>
 
               <!-- Cats BTN -->
-              <button class="btn h-20 rounded-full">
+              <button id="Cat_btn" onclick="loadCategoryPets('Cat')" class="btn h-20 rounded-full">
                 <img class="w-[55px]" src="images/cat.png" alt="dog">
                 <span class="font-bold text-xl">Cats</span>
               </button>
 
               <!-- Rabbits BTN -->
-              <button class="btn h-20 rounded-full">
+              <button id="Rabbit_btn" onclick="loadCategoryPets('Rabbit')" class="btn h-20 rounded-full">
                 <img class="w-[55px]" src="images/rabbit.png" alt="dog">
                 <span class="font-bold text-xl">Rabbits</span>
               </button>
 
               <!-- Birds BTN -->
-              <button class="btn h-20 rounded-full">
+              <button id="Bird_btn" onclick="loadCategoryPets('Bird')" class="btn h-20 rounded-full">
                 <img class="w-[55px]" src="images/parrot.png" alt="dog">
                 <span class="font-bold text-xl">Birds</span>
               </button>
@@ -106,17 +107,103 @@
 
             <div class="flex justify-between w-11/12 mx-auto bg-base-100 mt-6">
 
-              <a class=" text-xl font-bold">Best Deal For you</a>
+              <a class=" text-xl ml-4 font-bold">Best Deal For you</a>
               <div class="card-actions">
                 <button class="btn text-white rounded-md bg-[#0E7A81]">Sort by Price</button>
               </div>
             </div>
            
           </div>
+
+
+
+          <!-- API works and data will show -->
+          <div class="lg:grid lg:grid-cols-4 md:flex md:flex-col-reverse sm:flex sm:flex-col-reverse gap-4 p-2 mb-10">
+            <div id="All_categories" class="col-span-3 border border-gray-300 rounded-xl p-4 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2">
+              
+            </div>
+            <div id="Show_image" class="col-span-1 border border-gray-300 rounded-xl grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 p-4 gap-2 auto-rows-min">
+
+            </div>
+          </div>
       </main>
+      
+      <!-- Open the modal using ID.showModal() method -->
+      <button id="showModaldata" class="hidden" class="btn" onclick="customModal.showModal()">open modal</button>
+      <dialog id="customModal" class="modal">
+      <div class="modal-box w-11/12 max-w-3xl ">
+          <div id="modal-content" class=""></div>
+          <div class="modal-action inline my-4">
+          <form method="dialog">
+              <button class="w-full border border-[#0e7a8133] bg-[#0e7a811a] rounded-xl text-[#0E7A81] py-2 my-2 font-bold" fdprocessedid="u7wmpp">Cancel</button>
+          </form>
+          </div>
+      </div>
+      </dialog>
+      
+      
 
       <!-- footer section -->
-       <footer></footer>
+        <footer class="footer p-16 bg-black mt-5">
+
+        <div class="w-11/12 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mx-auto justify-between gap-10">
+
+
+          <div class="space-y-2">
+            <div class="flex items-center">
+              <img class="logo w-[25px]" src="images/logo.webp" alt="Peddy Logo">
+              <a class="btn btn-ghost text-white font-bold text-xl">Peddy</a>
+            </div>
+              <p class="text-white">Location: av. Washington 165, NY CA <br> 54003</p>
+              <p class="text-white">Phone: +31 85 964 47 25</p>
+              <p class="text-white">Email: info@yourdomain.com</p>
+              <p class="text-white">Openings hours: 9.00 AM - 5.00 PM</p>
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-2">
+              <div>
+                <img class="w-7" src="images/facebook.png" alt="">
+              </div>
+              <div>
+                <img class="w-7 bg-white" src="images/twitter.png" alt="">
+              </div>
+              <div>
+                <img class="w-7" src="images/youtube.png" alt="">
+              </div>
+              <div>
+                <img class="w-7" src="images/social.png" alt="">
+              </div>
+              
+            </div>
+          </div>
+  
+          
+          <div class="text-white">
+            
+            <h6 class="footer-title font-bold">Useful Links</h6>
+            <nav class="text-gray-50">
+              <a class="link link-hover ">Home</a><br>
+              <a class="link link-hover">About us</a><br>
+              <a class="link link-hover">Animals</a><br>
+              <a class="link link-hover">Foundation</a><br>
+              <a class="link link-hover">Contact</a><br>
+            </nav>
+          </div>
+
+
+          <div class="">
+              <h1 class="font-bold pl-4  text-white">Drop a Message</h1>
+              
+              <div class="w-10/12 mt-6">
+                <input type="email" placeholder="Enter your email" class="input input-bordered w-full bg-gray-800 rounded-xl text-white mb-3"/>
+              <button class="btn w-full  mx-auto text-white border-none rounded-xl bg-[#0E7A81]">Subscribe</button>
+              </div>
+
+          </div>
+
+        </div>
+
+       </footer>
     
+       <script src="script/script.js"></script>
 </body>
 </html>

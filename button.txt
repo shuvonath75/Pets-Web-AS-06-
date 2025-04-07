@@ -1,0 +1,27 @@
+<div id="Categories_btn" class="card w-11/12 bg-base-100 mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-4 mb-14">
+
+              <!-- Dogs BTN -->
+              <button class="btn h-20 rounded-full">
+                <img class="w-[55px]" src="images/dog.png" alt="dog">
+                <span class="font-bold text-xl">Dogs</span>
+              </button>
+
+              <!-- Cats BTN -->
+              <button class="btn h-20 rounded-full">
+                <img class="w-[55px]" src="images/cat.png" alt="dog">
+                <span class="font-bold text-xl">Cats</span>
+              </button>
+
+              <!-- Rabbits BTN -->
+              <button class="btn h-20 rounded-full">
+                <img class="w-[55px]" src="images/rabbit.png" alt="dog">
+                <span class="font-bold text-xl">Rabbits</span>
+              </button>
+
+              <!-- Birds BTN -->
+              <button class="btn h-20 rounded-full">
+                <img class="w-[55px]" src="images/parrot.png" alt="dog">
+                <span class="font-bold text-xl">Birds</span>
+              </button>
+
+            </div>
